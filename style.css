@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #0f172a;
+  color: white;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #1e293b;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.4rem;
+}
+
+.subtitle {
+  color: #cbd5e1;
+  margin-top: 0.5rem;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.card {
+  background: #1e293b;
+  padding: 1.5rem;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+  border: 1px solid #334155;
+}
+
+.form-row {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: #cbd5e1;
+}
+
+input, select {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 10px;
+  border: 1px solid #475569;
+  background: #0f172a;
+  color: white;
+}
+
+button {
+  background: #22c55e;
+  color: black;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  filter: brightness(1.1);
+}
+
+.plan-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.day-card {
+  background: #0f172a;
+  padding: 1rem;
+  border: 1px solid #334155;
+  border-radius: 10px;
+}
+
+.exercise {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+
+.exercise input {
+  margin-right: 0.5rem;
+}
+
+#logList {
+  margin-top: 1rem;
+  list-style: none;
+  padding: 0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+#logList li {
+  border-bottom: 1px solid #334155;
+  padding: 0.4rem 0;
+}
+
+.chart {
+  height: 140px;
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.bar {
+  flex: 1;
+  background: #22c55e;
+  border-radius: 6px 6px 0 0;
+  position: relative;
+}
+
+.bar span {
+  position: absolute;
+  bottom: 100%;
+  font-size: 0.7rem;
+}
