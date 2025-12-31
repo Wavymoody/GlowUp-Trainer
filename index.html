@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GlowUp Trainer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>GlowUp Trainer</h1>
+    <p class="subtitle">Your simple path to losing fat & looking good.</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Your Fitness Goal</h2>
+      
+      <div class="form-row">
+        <label>Name</label>
+        <input type="text" id="name" placeholder="Your name" />
+      </div>
+
+      <div class="form-row">
+        <label>Current Weight (lbs)</label>
+        <input type="number" id="currentWeight" placeholder="230" />
+      </div>
+
+      <div class="form-row">
+        <label>Goal Weight (lbs)</label>
+        <input type="number" id="goalWeight" placeholder="185" />
+      </div>
+
+      <div class="form-row">
+        <label>Days Per Week You Can Work Out</label>
+        <select id="daysPerWeek">
+          <option value="3">3 Days</option>
+          <option value="4">4 Days</option>
+          <option value="5">5 Days</option>
+        </select>
+      </div>
+
+      <button id="generatePlanBtn">Generate Workout Plan</button>
+    </section>
+
+    <section class="card">
+      <h2>Your Weekly Workout Plan</h2>
+      <div id="planSummary"></div>
+      <div id="planContainer" class="plan-grid"></div>
+    </section>
+
+    <section class="card">
+      <h2>Progress Tracker</h2>
+
+      <div class="form-row">
+        <label>Date</label>
+        <input type="date" id="logDate" />
+      </div>
+
+      <div class="form-row">
+        <label>Weight (lbs)</label>
+        <input type="number" id="logWeight" />
+      </div>
+
+      <button id="addLogBtn">Add Entry</button>
+
+      <ul id="logList"></ul>
+
+      <h3>Weight Trend</h3>
+      <div id="chart" class="chart"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built by Mahmoud Ahmed Elbayoumi ✨</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
